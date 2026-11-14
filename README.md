@@ -8,6 +8,8 @@ General-purpose astronomy libraries such as Astronomy Engine leave Chiron out, a
 
 ## Install
 
+Available on [npm](https://www.npmjs.com/package/chiron-ephemeris) as `chiron-ephemeris` (latest: `1.0.0`).
+
 ```sh
 npm install chiron-ephemeris
 ```
