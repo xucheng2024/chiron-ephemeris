@@ -1,0 +1,26 @@
+{
+  "name": "chiron-ephemeris",
+  "version": "1.0.0",
+  "description": "Positions of the centaur 2060 Chiron, 1900–2100, from a NASA JPL Horizons table. Zodiac sign, retrograde, Chiron return and ingress dates. Zero dependencies.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test \"test/*.test.ts\"",
+    "prepublishOnly": "npm run build && npm test",
+    "data": "node scripts/build-data.ts",
+    "fixture": "node scripts/build-fixture.ts"
+  },
+  "keywords": ["chiron", "ephemeris", "astrology", "astronomy", "centaur", "jpl", "horizons", "zodiac", "chiron-return", "natal-chart"],
+  "author": "Natal Chart Lab (https://natalchartlab.com)",
+  "homepage": "https://natalchartlab.com/chiron-calculator",
+  "repository": { "type": "git", "url": "git+https://github.com/xucheng2024/chiron-ephemeris.git" },
+  "bugs": "https://github.com/xucheng2024/chiron-ephemeris/issues",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "devDependencies": { "typescript": "^5.9.3" }
+}
